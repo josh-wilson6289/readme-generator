@@ -31,7 +31,7 @@ function generateMarkdown(data) {
   ${data.test}
 
   ## Contact 
-  GitHub: ${data.github}
+  GitHub: github.com/${data.github}
   Email: ${data.email}
 `;
 }

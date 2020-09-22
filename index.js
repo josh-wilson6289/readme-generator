@@ -1,6 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
+const {isEmail}= require("validator");
 
 
 // array of questions for user
@@ -30,7 +31,13 @@ function init() {
     {
       type: "input",
       name: "title",
-      message: questions[0]
+      message: questions[0],
+      validate: function(val){
+        if (val.length > 4) {
+          return true;
+        }
+        return "Enter in 4 characters!";
+      }
     },
     {
       type: "input",
@@ -71,7 +78,13 @@ function init() {
     {
       type: "input",
       name: "email",
-      message: questions[8]
+      message: questions[8],
+      validate: function(val) {
+        if (isEmail(val)) {
+          return true
+        }
+        return "Please enter a valid email!";
+      }
     }
   ]);
 }

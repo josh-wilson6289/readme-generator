@@ -1,23 +1,23 @@
-# My title
+# title
 
   ## Description
-  Here's a description of what this project does.
+  description
 
   ## Installation
-  To install, do the thing.
+  install
 
   ## Usage 
-  Here's a description of usage
+  usage
 
   ## License
-  Maybe this should be a link?
+  No License
 
   ## Contributing 
-  Description of how to contribute to the project
+  contribution
 
   ## Tests 
-  Here's where you can enter testing info
+  tests
 
   ## Contact 
-  josh-wilson6289
-  joshua.wilson6289@gmail.com
+  GitHub: github
+  Email: email

@@ -20,7 +20,6 @@ const questions = [
 function writeToFile(fileName, data) {
   fs.writeFile(fileName, data, function(err){
     if (err) throw err;
-    console.log("created file!");
   });
 }
 
@@ -49,8 +48,9 @@ function init() {
       message: questions[3]
     },
     {
-      type: "input",
+      type: "list",
       name: "license",
+      choices: ["MIT", "GPL v2", "Apache", "No License"],
       message: questions[4]
     },
     {
@@ -81,9 +81,6 @@ init()
   .then(function(answers){
     const readme = generateMarkdown(answers);
     return writeToFile("readme.md", readme);
-  })
-  .then(function() {
-    console.log("Successfully wrote to readme.md");
   })
   .catch(function(err) {
     console.log(err);

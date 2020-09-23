@@ -29,5 +29,5 @@
   No tests have been written yet.
 
   ## Contact 
-  [GitHub Page](https://www.github.com/josh-wilson6289
+  [GitHub Page](https://www.github.com/josh-wilson6289)
   Email: joshua.wilson6289@gmail.com

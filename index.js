@@ -135,7 +135,7 @@ function init() {
 init()
   .then(function(answers){
     const readme = generateMarkdown(answers);
-    return writeToFile("readme.md", readme);
+    return writeToFile("README.md", readme);
   })
   .catch(function(err) {
     console.log(err);

@@ -1,4 +1,4 @@
-# Title
+# README Generator
 
   ## Table of Contents
 
@@ -9,25 +9,25 @@
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Contact](#contact)
-  
+
   ## Description
-  test
+  This project makes creating a README file easier for developers.  It prompts the user for information about the project using Inquirer and then creates a README.md file using fs writeToFile. 
 
   ## Installation
-  test
+  This project uses Inquire and Validator, so those NPM packages must be installed before running the file.
 
-  ## Usage 
-  test
-
+  ## Usage
+  Simply run the index.js file, answer the questions, and a README is generated for you in the Generated-README folder.
+  
   ## License
   No License
 
   ## Contributing 
-  test
+  No contributors yet.
 
   ## Tests 
-  test
+  No tests have been written yet.
 
   ## Contact 
-  GitHub: github.com/test
+  [GitHub Page](https://www.github.com/josh-wilson6289
   Email: joshua.wilson6289@gmail.com

@@ -19,7 +19,7 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-  fs.writeFile(fileName, data, function(err){
+  fs.writeFile(`./Generated-README ${fileName}`, data, function(err){
     if (err) throw err;
   });
 }
@@ -33,47 +33,89 @@ function init() {
       name: "title",
       message: questions[0],
       validate: function(val){
-        if (val.length > 4) {
+        if (val.length > 1) {
           return true;
         }
-        return "Enter in 4 characters!";
+        return "Invalid Input";
       }
     },
     {
       type: "input",
       name: "description",
-      message: questions[1]
+      message: questions[1],
+      validate: function(val){
+        if (val.length > 1) {
+          return true;
+        }
+        return "Invalid Input";
+      }
     },
     {
       type: "input",
       name: "installation",
-      message: questions[2]
+      message: questions[2],
+      validate: function(val){
+        if (val.length > 1) {
+          return true;
+        }
+        return "Invalid Input";
+      }
     },
     {
       type: "input",
       name: "usage",
-      message: questions[3]
+      message: questions[3],
+      validate: function(val){
+        if (val.length > 1) {
+          return true;
+        }
+        return "Invalid Input";
+      }
     },
     {
       type: "list",
       name: "license",
       choices: ["MIT", "GPL v2", "Apache", "No License"],
-      message: questions[4]
+      message: questions[4],
+      validate: function(val){
+        if (val.length > 1) {
+          return true;
+        }
+        return "Invalid Input";
+      }
     },
     {
       type: "input",
       name: "contribution",
-      message: questions[5]
+      message: questions[5],
+      validate: function(val){
+        if (val.length > 1) {
+          return true;
+        }
+        return "Invalid Input";
+      }
     },
     {
       type: "input",
       name: "test",
-      message: questions[6]
+      message: questions[6],
+      validate: function(val){
+        if (val.length > 1) {
+          return true;
+        }
+        return "Invalid Input";
+      }
     },
     {
       type: "input",
       name: "github",
-      message: questions[7]
+      message: questions[7],
+      validate: function(val){
+        if (val.length > 1) {
+          return true;
+        }
+        return "Invalid Input";
+      }
     },
     {
       type: "input",
@@ -83,7 +125,7 @@ function init() {
         if (isEmail(val)) {
           return true
         }
-        return "Please enter a valid email!";
+        return "Invalid Email";
       }
     }
   ]);

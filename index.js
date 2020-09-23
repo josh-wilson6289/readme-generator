@@ -19,7 +19,7 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-  fs.writeFile(`./Generated-README ${fileName}`, data, function(err){
+  fs.writeFile(`./generated-readme/${fileName}`, data, function(err){
     if (err) throw err;
   });
 }
